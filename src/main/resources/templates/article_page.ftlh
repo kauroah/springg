@@ -9,7 +9,7 @@
 </head>
 <body>
 <div>
-    <form action="/users/${user.id}/articles" method="post">
+    <form action="/users/${user_id}/articles" method="post">
         <input name="email" type="email" placeholder="EMAIL">
         <input name="password" type="password" placeholder="PASSWORD">
         <input type="submit" value="SIGN UP">

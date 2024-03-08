@@ -49,10 +49,11 @@ public class ArticleServiceImpl implements ArticleService {
         if (articleRepository.existsByArticleIdAndLikesContaining(articleId, user)) {
             article.getLikes().remove(user);
         }
+
         else {
             article.getLikes().add(user);
         }
-        System.out.println("**********************");
+
         articleRepository.save(article);
         return ArticleDto.from(article);
     }
